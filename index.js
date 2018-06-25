@@ -52,7 +52,6 @@ else {
 function handleNextButton(){
   //listens for event on results page that will load the next question and go back to renderQuestion function. 
   $('.questionContainer').on('click', '.js-next-button', event => {
-
     questionNumber++;
     renderQuestion();
   }
@@ -72,7 +71,7 @@ function handleSubmitButton(){
   //listen for an event after selecting an option and then clicking submit button that will lead to results of the question
   $('.questionContainer').on('click', '.submitAnswer', event => {
     event.preventDefault();
-      renderResults();
+    renderResults();
   }); 
 }
   
