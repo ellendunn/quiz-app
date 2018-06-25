@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  );
+}
+
+/* Start Styling */
+html{
+  background: linear-gradient(
+      rgba(0, 0, 0, .35),
+      rgba(0, 0, 0, .35)
+    ), url('http://www.chauvetprofessional.com/wp-content/uploads/2014/12/Richard-Rutherford-kcmo-interior-stage.jpg'), fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-content: center;
+}
+
+body{
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+.heading {
+  width:100%;
+  /* border: 1px solid white; */
+  text-align: center;
+  padding: 20px;
+  display:flex;
+  justify-content: center; 
+  text-shadow: black 0px 0px 10px;
+}
+
+li {
+  display: inline-block;
+  padding:10px;
+  font-size: 24px;
+}
+
+main {
+  width: 100%;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* border: 1px solid white; */
+  color: white;
+}
+
+.container {
+  position: flex;
+  float: center;
+  font-size: 22px;
+  font-weight: bolder;
+  text-shadow: black 0px 0px 20px;
+  padding: 0px;
+}
+
+.introGif{
+  height: 220px;
+  padding: 0px;
+}
+
+button {
+  /* border: 1px solid white; */
+  padding: 20px;
+  margin: 20px;
+  color:white;
+  text-shadow: black 0px 0px 20px;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+/* QUIZ Styling */
+.resultsGif{
+  height: 200px;
+  max-width: 90%;
+}
+
+.activeQuestion {
+  /* border: 1px solid white; */
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  /* background-color: rgba(255, 255, 255, .5);
+  color: black; */
+  text-shadow: black 0px 0px 20px;
+  color: white;
+}
+
+fieldset {
+    border: none;
+    justify-content:left; 
+    text-align:left;
+}
+
+.questionForm{
+  font-size: 20px;  
+  display:inline-block;
+  justify-content: left;
+  border: none;
+  padding: 10px;
+}
+
+.submitAnswer{
+  justify-content: center;
+}
+
+label {
+  width: 750%;
+  text-transform: none;
+  padding-left: 10px;
+}
+
+.questionContainer{
+  margin: 10px;
+  border: none;
+}
+
+.finalResultsContainer{
+  position: relative;
+  justify-content: center;
+  margin-top: 90px;
+  font-size: 20px;
+}
+
+/* Clearfix */
+heading::before,
+heading::after {
+    display: table;
+    content: '';
+}
+heading::after {
+    clear: both;
+}
+.col-6, .col-8 {
+    float: center;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+}
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+
+.col-6 {
+    width: 50%;
+}
+.col-8 {
+    width: 66.67%;
+}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+
+.col-6 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 100%;
+}
+
+.resultsGif{
+  width: 80%;
+}
+
+}

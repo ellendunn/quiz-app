@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1">
+    <title>Improv Quiz</title>
+    <meta name = "description" content="Test your knowledge of what it takes to be the next great comedian by taking this quiz.">
+    <script src="quizdata.js"></script>
+
+  <!-- fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+  <!-- reset -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <!-- styling -->
+  <link href="index.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+
+    <header role="banner" class="heading">
+      <div class = "tracking col-6">
+        <ul>
+          <li>Question: <span  class="questionTracking">0</span>/10</li>
+          <li>Score: <span class="score">0</span>/10</li>
+        </ul>
+    </header>
+
+
+    <main role="main" class="display col-8">
+      <div class = "container">
+        <h1>Do you have what it takes to be great at Improv?</h1>
+        <img class='introGif' src="https://78.media.tumblr.com/127e61b86052c6ced9ba9ef4dcd1b9d1/tumblr_mtb00afrL81qjl1wro3_250.gif" alt="Gif of Ryan Stiles"><br>
+        <button type="button" class="js-start-button">Let's Find Out!</button>
+      </div>
+    
+      <div class="questionContainer"></div>
+
+   </main>
+  </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</html>
